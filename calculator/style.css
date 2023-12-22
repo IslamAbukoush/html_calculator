@@ -1,0 +1,103 @@
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 1.05rem;
+}
+
+#body {
+    height: 400px;
+    width: 300px;
+    background-color: rgb(182, 182, 182);
+    margin: auto;
+    margin-top: 30px;
+    border: 5px solid black;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+}
+
+#display {
+    width: 80%;
+    height: 20%;
+    background-color: rgb(26, 216, 220);
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    overflow-x: scroll;
+    text-overflow:clip;
+    font-size: 27px;
+    text-wrap: nowrap;
+}
+
+#buttons {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.button {
+    width: 22%;
+    height: 22%;
+    background-color: rgb(220, 220, 220);
+    border: 2px solid;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.button:hover {
+    background-color: rgb(170, 255, 157);
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: rgb(0, 255, 17);
+    cursor: pointer;
+}
+
+#del {
+    background-color: rgb(255, 152, 152);
+}
+
+#del:hover {
+    background-color: rgb(255, 79, 79);
+}
+
+#del:active {
+    background-color: rgb(255, 0, 0);
+}
+
+::-webkit-scrollbar {
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(198, 254, 255); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    border-radius: 10px;
+}
